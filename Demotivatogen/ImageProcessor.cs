@@ -48,12 +48,18 @@ public static class ImageProcessor
 
     private static readonly Point TextPositionSecond =
         new(TextPositionCenter.X, TextPositionCenter.Y + TextSize.Height / 4);
-
-    private static readonly Font MainFont = SystemFonts.CreateFont("Times New Roman", MaxFontSize, FontStyle.Bold);
-
-    private static readonly Font SecondFont =
-        SystemFonts.CreateFont("Times New Roman", MaxSecondFontSize, FontStyle.Bold);
     
+    private static Font MainFont { get; }
+    private static Font SecondFont { get; }
+
+    static ImageProcessor()
+    {
+        var collection = new FontCollection();
+        var family = collection.Add(new MemoryStream(Resources.TimesNewRomanBold, false));
+        MainFont = family.CreateFont(MaxFontSize);
+        SecondFont = family.CreateFont(MaxSecondFontSize);
+    }
+
     public static async Task CreateImageAsync(Stream centralImage, Stream output, string mainText, string? subText)
     {
         using Image image = new Image<Rgba32>(ImageSize.X, ImageSize.Y, Color.Black);

@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demotivatogen", "Demotivatogen\Demotivatogen.csproj", "{345D1AA7-75A2-498E-8F75-FF8409E0547E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DodeMotivBot", "DodeMotivBot\DodeMotivBot.csproj", "{DAA6995E-13F4-4DD1-B97A-030F4EF95615}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{345D1AA7-75A2-498E-8F75-FF8409E0547E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{345D1AA7-75A2-498E-8F75-FF8409E0547E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{345D1AA7-75A2-498E-8F75-FF8409E0547E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAA6995E-13F4-4DD1-B97A-030F4EF95615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAA6995E-13F4-4DD1-B97A-030F4EF95615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAA6995E-13F4-4DD1-B97A-030F4EF95615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAA6995E-13F4-4DD1-B97A-030F4EF95615}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
